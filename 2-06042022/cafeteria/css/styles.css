@@ -1,0 +1,45 @@
+/* 
+arquivo de css (Cascade style sheet-folha de estilo em cascata
+é utilizado para fazer a camada de formatação de um 
+site em html.
+*/
+/* 
+Vamos formatar todos os elementos presentes em uma pagina html
+ usando o *(asterisco) e aplicar margem externa e interna 
+ zero(0) e realizar o ajuste das caixas html
+*/
+* {
+  margin: 0px; /*margem externa*/
+  padding: 0px; /*margem interna*/
+  box-sizing: border-box; /*ajuste de padding para n criar a barra de rolamento*/
+}
+
+header {
+  height: 300px; /*aplicar altura ao cabeçalho*/
+  background-image: url("../img/cyber.jpg");
+  background-size: 100% cover;
+  background-position-y: -400px;
+  padding-left: 50px;
+  padding-top: 200px;
+}
+h1 {
+  font-family: verdana;
+  font-size: 50pt;
+  color: cyan;
+  text-shadow: 4px 4px 10px black;
+}
+nav {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-inline: 40px;
+  margin: 10px;
+}
+nav ul li a {
+  color: cyan;
+  font-family: arial;
+  text-decoration: none;
+}
