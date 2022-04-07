@@ -35,11 +35,47 @@ nav {
 }
 nav ul li {
   display: inline-block;
-  margin-inline: 40px;
-  margin: 10px;
+  margin-inline: 60px;
 }
 nav ul li a {
   color: cyan;
   font-family: arial;
   text-decoration: none;
+}
+main {
+  padding: 215px;
+}
+footer {
+  background-color: rgb(17, 24, 63);
+  /* permitir com que o roda pé fique com seu conteudo flexivel */
+  display: flex;
+  /* dispor o conteudo em linha */
+  flex-direction: row;
+  /* ajustar o conteudo com justify-content e align-items */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+footer div {
+  margin: 200px;
+}
+#endereco {
+  font-family: verdana;
+  font-size: 14pt;
+  color: whitesmoke;
+  width: 300px;
+  text-align: left;
+}
+#redes ul {
+  /* retirar as bolinha de marcação */
+  list-style: none;
+}
+/* vamos dispor as imagens das redes em linha com display inline-block */
+#redes ul li {
+  display: inline-block;
+  margin: 20px;
+}
+#redes ul li a img {
+  width: 90px;
+  height: 90px;
 }
