@@ -44,6 +44,7 @@ nav ul li a {
 }
 main {
   padding: 50px;
+  background-color: black;
 }
 footer {
   background-color: rgb(17, 24, 63);
@@ -73,16 +74,50 @@ footer div {
 /* vamos dispor as imagens das redes em linha com display inline-block */
 #redes ul li {
   display: inline-block;
-  margin: 20px;
+  margin: 15px;
 }
 #redes ul li a img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 }
-
+p {
+  color: white;
+  font-size: 12pt;
+  font-family: arial;
+}
+h2 {
+  font-family: Arial;
+  font-size: 20pt;
+  margin: 50px;
+  background-color: cyan;
+  color: black;
+  text-align: center;
+}
+/* começo home */
 #imghome {
+  text-align: center;
 }
 
+#imghome img {
+  width: 400px; /*largura da imagem*/
+  height: 400px; /*altura da imagem*/
+  /* arredondar os cantos da imagem */
+  border-radius: 250px;
+  opacity: 0.7; /*colocar a imagem em 70% de opacidade*/
+  margin: 20px;
+  /* Efeito de transição. Isso fará com que a imagem tenha
+  uma animação quando passar o mouse sobre ela */
+  transition: ease 1s;
+}
+#imghome img:hover {
+  opacity: 1;
+  /* width: 500px;
+  height: 500px; */
+  transform: scale(1.2);
+  /*transform: rotate(360deg); /*girar a imagem em 360graus*/
+}
+/* fim home */
+/* começo historia */
 #imghistoria {
   text-align: center;
   width: 90%;
@@ -103,4 +138,64 @@ footer div {
   width: 100%;
   height: 500px;
   margin: 10px;
+}
+/* fim historia */
+/* inicio stilos cardapio */
+h3 {
+  /* por tudo em maiusculo */
+  text-transform: uppercase;
+  color: blue;
+  font-size: 20pt;
+  font-family: verdana;
+  margin: 30px;
+  padding-left: 25px;
+}
+#linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#linha #produto {
+  width: 45%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: 225px;
+  border-radius: 10px;
+}
+#linha #produto #imgprod,
+#linha #produto #descricao {
+  width: 48%;
+  margin: 10px;
+}
+
+h4 {
+  font-family: verdana;
+  font-size: 12pt;
+  color: white;
+  margin: 7px;
+}
+h5 {
+  font-family: "Lucida Sans";
+  font-weight: lighter;
+  font-size: 10pt;
+  color: white;
+  margin: 7px;
+}
+h6 {
+  font-family: "Lucida Sans";
+  font-size: 8pt;
+  color: cyan;
+  margin: 7px;
+}
+#linha #produto:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
 }
