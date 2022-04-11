@@ -21,7 +21,32 @@
             <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <h2>Fale Conosco</h2>
+        <form >
+            <!-- caixa abaixo tipo texto pois iremos escrever o 
+            nome do cliente -->
+            <input type="text" placeholder="Nome Completo" required>
+            <!-- a caixa abaixo sera formatada com o tipo email,
+            isso permite a configração do email e a validaçao tambem -->
+            <input type="email" placeholder="E-Mail" required>
+            <!-- caixa abaixo do tipo tel para telefones -->
+            <input type="tel" placeholder="Telefone" maxlength="11">
+            <select>
+                <option value="Selecione">Selecione</option>
+                <option value="Critica">Crítica</option>
+                <option value="Sugestao">Sugestão</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Duvidas">Duvidas</option>
+
+            </select>
+            <textarea>
+            </textarea>
+            <!-- o elemento abaixo vai ser um tipo submit 
+                ,para enviar os dados -->
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
     <footer>
         <div id="endereco">
             Rua Cyber Space, 1024 <br>
